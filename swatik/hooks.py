@@ -136,7 +136,14 @@ app_license = "mit"
 # Document Events
 # ---------------
 # Hook on document methods and events
-
+doc_events = {
+    "Employee Checkin": {
+        "validate": "swatik.swatik.employee_checkin.validate_checkin"
+    },
+    "Employee": {
+        "validate": "swatik.swatik.employee_checkin.validate_employee"
+    }
+}
 # doc_events = {
 # 	"*": {
 # 		"on_update": "method",
